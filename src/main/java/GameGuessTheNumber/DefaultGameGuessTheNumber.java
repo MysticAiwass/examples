@@ -75,7 +75,7 @@ public class DefaultGameGuessTheNumber {
     }
 
     public int generateNumber(int max) {
-        return (int) (Math.random() * (max - 0 + 1) + 0);
+        return (int) (Math.random() * (max + 1));
     }
 
     public void giveClue(int aiNumber, int userAnswer) {
@@ -96,8 +96,8 @@ public class DefaultGameGuessTheNumber {
             this.maxTries = maxTries;
         }
 
-        private int maxNumberValue;
-        private int maxTries;
+        private final int maxNumberValue;
+        private final int maxTries;
     }
 }
 
